@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Land Fast for Cash | Alamo Land Buyers | San Antonio TX</title>
+    <meta name="description" content="Alamo Land Buyers pays cash for vacant land in San Antonio and 8 surrounding Texas counties. Fair offers in 24 hours. Close in as little as 14 days. Hablamos Español.">
+    <meta name="keywords" content="sell my land, sell land fast, cash for land, sell vacant land Texas, sell land San Antonio, Guadalupe County land buyer, Comal County land buyer, vender terreno, compramos terrenos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --forest: #142E23;
+            --forest-deep: #091710;
+            --forest-mid: #1a3f2e;
+            --gold: #D4AF37;
+            --gold-dark: #AA8C3C;
+            --gold-light: #E8D48B;
+            --cream: #FDFCF8;
+            --cream-warm: #F5F0E6;
+            --text-dark: #1a1a1a;
+            --text-mid: #4a4a4a;
+            --text-light: #7a7a7a;
+            --white: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--text-dark); background: var(--cream); overflow-x: hidden; }
+
+        .top-bar { background: var(--forest-deep); color: var(--cream-warm); text-align: center; padding: 10px 20px; font-size: 0.84rem; font-weight: 500; display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .top-bar a { color: var(--gold); text-decoration: none; font-weight: 700; }
+        .top-bar .espanol { background: rgba(212,175,55,0.15); border: 1px solid rgba(212,175,55,0.3); border-radius: 100px; padding: 4px 14px; font-size: 0.8rem; color: var(--gold-light); font-weight: 600; cursor: pointer; transition: background 0.2s; }
+        .top-bar .espanol:hover { background: rgba(212,175,55,0.25); }
+
+        .nav { background: var(--forest); padding: 14px 40px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 20px rgba(0,0,0,0.2); }
+        .nav-logo { display: flex; align-items: center; gap: 12px; }
+        .nav-logo-icon { width: 38px; height: 38px; background: linear-gradient(135deg, var(--gold-dark), var(--gold)); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; color: var(--forest-deep); font-weight: 800; }
+        .nav-logo-text { font-family: 'DM Serif Display', serif; font-size: 1.45rem; color: var(--white); line-height: 1.1; }
+        .nav-logo-text .gold { color: var(--gold); }
+        .nav-right { display: flex; align-items: center; gap: 24px; }
+        .nav-espanol { color: var(--gold-light); font-size: 0.82rem; font-weight: 600; padding: 6px 14px; border: 1px solid rgba(212,175,55,0.3); border-radius: 100px; cursor: pointer; transition: all 0.2s; text-decoration: none; }
+        .nav-espanol:hover { background: rgba(212,175,55,0.1); border-color: var(--gold); }
+        .nav-phone { text-align: right; }
+        .nav-phone-label { color: var(--gold-light); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; }
+        .nav-phone a { color: var(--white); text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: color 0.2s; }
+        .nav-phone a:hover { color: var(--gold); }
+
+        .hero { background: linear-gradient(165deg, var(--forest-deep) 0%, var(--forest) 45%, var(--forest-mid) 100%); position: relative; overflow: hidden; min-height: 88vh; display: flex; align-items: center; }
+        .hero::before { content: ''; position: absolute; top: -40%; right: -15%; width: 65%; height: 180%; background: radial-gradient(ellipse, rgba(212,175,55,0.07) 0%, transparent 65%); pointer-events: none; }
+        .hero::after { content: '\2605'; position: absolute; bottom: -80px; left: -40px; font-size: 320px; color: rgba(212,175,55,0.03); pointer-events: none; transform: rotate(-15deg); }
+        .hero-grid { max-width: 1200px; margin: 0 auto; padding: 80px 40px 140px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; position: relative; z-index: 2; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.2); border-radius: 100px; padding: 8px 18px; color: var(--gold-light); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 24px; animation: fadeInUp 0.6s ease both; }
+        .hero-badge::before { content: ''; width: 8px; height: 8px; background: var(--gold); border-radius: 50%; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
+        .hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2.4rem, 4.8vw, 3.5rem); color: var(--white); line-height: 1.1; margin-bottom: 20px; animation: fadeInUp 0.6s 0.1s ease both; }
+        .hero h1 .gold { color: var(--gold); }
+        .hero-sub { color: rgba(255,255,255,0.72); font-size: 1.12rem; line-height: 1.7; margin-bottom: 36px; max-width: 520px; animation: fadeInUp 0.6s 0.2s ease both; }
+        .hero-stats { display: flex; gap: 36px; animation: fadeInUp 0.6s 0.3s ease both; }
+        .hero-stat-num { font-family: 'DM Serif Display', serif; font-size: 2.1rem; color: var(--gold); line-height: 1; }
+        .hero-stat-label { color: rgba(255,255,255,0.5); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; margin-top: 6px; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+
+        .form-card { background: var(--white); border-radius: 18px; padding: 40px 34px; box-shadow: 0 30px 80px rgba(0,0,0,0.3), 0 0 0 1px rgba(212,175,55,0.08); animation: fadeInUp 0.6s 0.3s ease both; }
+        .form-card-header { text-align: center; margin-bottom: 28px; }
+        .form-card-header h2 { font-family: 'DM Serif Display', serif; font-size: 1.45rem; color: var(--forest); margin-bottom: 6px; }
+        .form-card-header p { color: var(--text-light); font-size: 0.88rem; }
+        .form-group { margin-bottom: 14px; }
+        .form-group label { display: block; font-size: 0.78rem; font-weight: 700; color: var(--text-mid); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.05em; }
+        .form-group input, .form-group select { width: 100%; padding: 12px 16px; border: 2px solid #e8e5de; border-radius: 10px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.94rem; color: var(--text-dark); background: var(--cream); transition: border-color 0.25s, box-shadow 0.25s; outline: none; }
+        .form-group input:focus, .form-group select:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(212,175,55,0.12); }
+        .form-group input::placeholder { color: #b5b0a5; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .form-submit { width: 100%; padding: 16px; background: linear-gradient(135deg, var(--gold-dark), var(--gold), var(--gold-light)); background-size: 200% 100%; color: var(--forest-deep); border: none; border-radius: 10px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; font-weight: 800; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s, background-position 0.4s; margin-top: 8px; }
+        .form-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(212,175,55,0.4); background-position: 100% 0; }
+        .form-trust { text-align: center; margin-top: 14px; font-size: 0.76rem; color: var(--text-light); }
+        .form-trust svg { width: 13px; height: 13px; vertical-align: -2px; margin-right: 3px; }
+
+        .how-section { max-width: 1100px; margin: 0 auto; padding: 90px 40px; }
+        .section-label { display: inline-block; color: var(--gold-dark); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 12px; }
+        .section-title { font-family: 'DM Serif Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.4rem); color: var(--forest); margin-bottom: 50px; line-height: 1.2; }
+        .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; position: relative; }
+        .steps-grid::before { content: ''; position: absolute; top: 56px; left: 15%; right: 15%; height: 2px; background: linear-gradient(90deg, var(--gold), var(--gold-dark), var(--gold)); opacity: 0.2; z-index: 0; }
+        .step-card { background: var(--white); border-radius: 16px; padding: 36px 28px; position: relative; border: 1px solid #ebe8e0; transition: transform 0.3s, box-shadow 0.3s; z-index: 1; }
+        .step-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
+        .step-num { width: 48px; height: 48px; background: linear-gradient(135deg, var(--forest), var(--forest-deep)); color: var(--gold); font-family: 'DM Serif Display', serif; font-size: 1.3rem; display: flex; align-items: center; justify-content: center; border-radius: 14px; margin-bottom: 22px; box-shadow: 0 4px 12px rgba(20,46,35,0.2); }
+        .step-card h3 { font-size: 1.1rem; color: var(--forest); margin-bottom: 10px; font-weight: 700; }
+        .step-card p { color: var(--text-mid); font-size: 0.9rem; line-height: 1.65; }
+
+        .why-section { background: var(--forest); padding: 90px 40px; position: relative; overflow: hidden; }
+        .why-section::before { content: ''; position: absolute; top: -20%; right: -10%; width: 40%; height: 140%; background: radial-gradient(ellipse, rgba(212,175,55,0.04) 0%, transparent 70%); }
+        .why-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+        .why-section .section-label { color: var(--gold-light); }
+        .why-section .section-title { color: var(--white); }
+        .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .why-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 30px 28px; transition: background 0.3s, border-color 0.3s; }
+        .why-card:hover { background: rgba(255,255,255,0.09); border-color: rgba(212,175,55,0.15); }
+        .why-icon { font-size: 1.5rem; margin-bottom: 14px; }
+        .why-card h3 { color: var(--gold); font-size: 1.02rem; margin-bottom: 8px; font-weight: 700; }
+        .why-card p { color: rgba(255,255,255,0.6); font-size: 0.88rem; line-height: 1.65; }
+
+        .counties-section { max-width: 1100px; margin: 0 auto; padding: 90px 40px; text-align: center; }
+        .counties-sub { color: var(--text-mid); font-size: 1rem; margin-bottom: 40px; max-width: 580px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+        .counties-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+        .county-tag { background: var(--white); border: 2px solid #ebe8e0; border-radius: 100px; padding: 12px 24px; font-weight: 600; font-size: 0.9rem; color: var(--forest); transition: all 0.25s; cursor: default; }
+        .county-tag:hover { border-color: var(--gold); background: rgba(212,175,55,0.05); color: var(--gold-dark); transform: translateY(-2px); }
+
+        .bilingual-section { background: linear-gradient(135deg, var(--cream-warm), var(--cream)); padding: 60px 40px; text-align: center; border-top: 1px solid #ebe8e0; border-bottom: 1px solid #ebe8e0; }
+        .bilingual-inner { max-width: 700px; margin: 0 auto; }
+        .bilingual-flag { font-size: 2.4rem; margin-bottom: 16px; }
+        .bilingual-section h2 { font-family: 'DM Serif Display', serif; font-size: 1.8rem; color: var(--forest); margin-bottom: 12px; }
+        .bilingual-section h2 .gold { color: var(--gold-dark); }
+        .bilingual-section p { color: var(--text-mid); font-size: 1rem; line-height: 1.7; margin-bottom: 24px; }
+        .bilingual-cta { display: inline-flex; align-items: center; gap: 10px; padding: 14px 32px; background: var(--forest); color: var(--gold); border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 1rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .bilingual-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(20,46,35,0.2); }
+
+        .cta-section { background: linear-gradient(165deg, var(--forest-deep), var(--forest), var(--forest-mid)); padding: 90px 40px; text-align: center; position: relative; overflow: hidden; }
+        .cta-section::before { content: '\2605'; position: absolute; top: -60px; right: -40px; font-size: 260px; color: rgba(212,175,55,0.03); transform: rotate(12deg); }
+        .cta-section h2 { font-family: 'DM Serif Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.5rem); color: var(--white); margin-bottom: 14px; position: relative; z-index: 2; }
+        .cta-section p { color: rgba(255,255,255,0.65); font-size: 1.05rem; margin-bottom: 36px; max-width: 540px; margin-left: auto; margin-right: auto; position: relative; z-index: 2; }
+        .cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; position: relative; z-index: 2; }
+        .cta-btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 36px; border-radius: 10px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; font-weight: 700; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+        .cta-btn:hover { transform: translateY(-2px); }
+        .cta-btn-primary { background: linear-gradient(135deg, var(--gold-dark), var(--gold)); color: var(--forest-deep); box-shadow: 0 4px 20px rgba(212,175,55,0.3); }
+        .cta-btn-primary:hover { box-shadow: 0 8px 32px rgba(212,175,55,0.45); }
+        .cta-btn-secondary { background: rgba(255,255,255,0.08); color: var(--white); border: 2px solid rgba(255,255,255,0.15); }
+        .cta-btn-secondary:hover { background: rgba(255,255,255,0.14); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+        .footer { background: var(--forest-deep); padding: 36px 40px; text-align: center; color: rgba(255,255,255,0.35); font-size: 0.83rem; line-height: 1.8; }
+        .footer a { color: var(--gold-dark); text-decoration: none; }
+        .footer-brand { font-family: 'DM Serif Display', serif; color: rgba(255,255,255,0.5); font-size: 1.1rem; margin-bottom: 8px; }
+
+        @media (max-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr; padding: 60px 24px 100px; gap: 40px; }
+            .steps-grid { grid-template-columns: 1fr; }
+            .steps-grid::before { display: none; }
+            .why-grid { grid-template-columns: 1fr; }
+            .nav { padding: 12px 20px; }
+            .nav-espanol { display: none; }
+            .hero-stats { gap: 24px; }
+            .form-row { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .hero-stats { flex-wrap: wrap; gap: 20px; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .top-bar { font-size: 0.78rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <span>Need to sell your land? Get a same-day cash offer: <a href="tel:2107010378">(210) 701-0378</a></span>
+        <span class="espanol" onclick="document.getElementById('espanol-section').scrollIntoView({behavior:'smooth'})">🇲🇽 Hablamos Español</span>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-logo">
+            <div class="nav-logo-icon">★</div>
+            <div class="nav-logo-text"><span class="gold">Alamo</span> Land Buyers</div>
+        </div>
+        <div class="nav-right">
+            <a href="#espanol-section" class="nav-espanol">🇲🇽 Español</a>
+            <div class="nav-phone">
+                <div class="nav-phone-label">Call or Text Anytime</div>
+                <a href="tel:2107010378">(210) 701-0378</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">Buying Land Across 8 Texas Counties</div>
+                <h1>We Buy Vacant Land <span class="gold">for Cash.</span><br>Close in 14&nbsp;Days.</h1>
+                <p class="hero-sub">Own land you don't need anymore? Tired of paying taxes on property you'll never build on? Alamo Land Buyers makes fair cash offers and handles everything — no realtors, no fees, no waiting.</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">14</div>
+                        <div class="hero-stat-label">Day Close</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">$0</div>
+                        <div class="hero-stat-label">Fees to You</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">24hr</div>
+                        <div class="hero-stat-label">Offer Speed</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <div class="form-card-header">
+                    <h2>Get Your Cash Offer Today</h2>
+                    <p>Takes 60 seconds — we'll call you within 24 hours</p>
+                </div>
+                <form id="leadForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" name="first_name" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" name="last_name" placeholder="Smith" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" placeholder="(555) 123-4567" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="john@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Property Address or County</label>
+                        <input type="text" name="property_address" placeholder="123 Ranch Rd, Seguin TX or Guadalupe County" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Approx. Acreage</label>
+                            <input type="text" name="acreage" placeholder="e.g. 5 acres">
+                        </div>
+                        <div class="form-group">
+                            <label>Asking Price</label>
+                            <select name="asking_price">
+                                <option value="">Select range</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-20k">$10,000 - $20,000</option>
+                                <option value="20k-50k">$20,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="100k-plus">$100,000+</option>
+                                <option value="make-offer">Just Make Me an Offer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-submit">Get My Cash Offer →</button>
+                    <p class="form-trust">
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg>
+                        100% confidential. No spam. No obligation.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-section">
+        <div class="section-label">Simple Process</div>
+        <h2 class="section-title">Three Steps to Selling Your Land</h2>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-num">1</div>
+                <h3>Tell Us About Your Property</h3>
+                <p>Fill out the quick form or call us. We just need the property location, approximate acreage, and how to reach you. Takes about 60 seconds.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">2</div>
+                <h3>Get a Fair Cash Offer</h3>
+                <p>We research your property, run the numbers, and present a no-obligation cash offer within 24 hours. No pressure, no games — just a straightforward number.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">3</div>
+                <h3>Close & Get Paid</h3>
+                <p>Accept our offer and we handle everything — title work, paperwork, closing costs. We close through a local title company in as few as 14 days.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-section">
+        <div class="why-inner">
+            <div class="section-label">Why Alamo Land Buyers</div>
+            <h2 class="section-title">We Make Selling Land Simple</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">💰</div>
+                    <h3>Real Cash Offers — No Financing Games</h3>
+                    <p>We buy with our own money. No waiting on bank approvals, no buyers backing out. When we make an offer, we close.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">📋</div>
+                    <h3>We Cover All Closing Costs</h3>
+                    <p>Title fees, document prep, recording fees — all on us. The number we offer is the number you take home.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🏚️</div>
+                    <h3>Any Condition, Any Situation</h3>
+                    <p>Overgrown lots, landlocked parcels, back taxes, inherited land, unclear title — we've worked through it all and we can handle yours.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">⚡</div>
+                    <h3>You Pick the Closing Date</h3>
+                    <p>Need to close fast? We can do 14 days. Need more time? That's fine too. Your timeline, your terms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="counties-section">
+        <div class="section-label">Our Service Area</div>
+        <h2 class="section-title">Counties We Buy Land In</h2>
+        <p class="counties-sub">We actively purchase vacant land throughout the greater San Antonio area and the Texas Hill Country.</p>
+        <div class="counties-grid">
+            <div class="county-tag">Guadalupe County</div>
+            <div class="county-tag">Comal County</div>
+            <div class="county-tag">Wilson County</div>
+            <div class="county-tag">Caldwell County</div>
+            <div class="county-tag">Medina County</div>
+            <div class="county-tag">Hays County</div>
+            <div class="county-tag">Bastrop County</div>
+            <div class="county-tag">Atascosa County</div>
+        </div>
+    </section>
+
+    <section class="bilingual-section" id="espanol-section">
+        <div class="bilingual-inner">
+            <div class="bilingual-flag">🇲🇽 🇺🇸</div>
+            <h2><span class="gold">Hablamos Español</span> — Le Podemos Ayudar</h2>
+            <p>¿Tiene un terreno que quiere vender? Compramos terrenos baldíos por dinero en efectivo en San Antonio y los condados cercanos. Ofrecemos precios justos, cerramos rápido, y nos encargamos de todo el papeleo. Llámenos — hablamos su idioma.</p>
+            <p style="font-size: 0.92rem; color: var(--text-light);">Do you have land you want to sell? We buy vacant land for cash in San Antonio and surrounding counties. We offer fair prices, close fast, and handle all the paperwork. Call us — we speak your language.</p>
+            <a href="tel:2107010378" class="bilingual-cta">📞 Llámenos: (210) 701-0378</a>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Sell Your Land?</h2>
+        <p>Stop paying taxes on property you don't use. Get a fair cash offer today — no obligation, no pressure, no fees.</p>
+        <div class="cta-buttons">
+            <a href="#" class="cta-btn cta-btn-primary" onclick="document.querySelector('.form-card').scrollIntoView({behavior:'smooth'});return false;">Get My Cash Offer →</a>
+            <a href="tel:2107010378" class="cta-btn cta-btn-secondary">📞 Call (210) 701-0378</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-brand">★ Alamo Land Buyers</div>
+        <p>San Antonio, Texas · <a href="tel:2107010378">(210) 701-0378</a> · Hablamos Español</p>
+        <p style="margin-top: 6px; font-size: 0.76rem; opacity: 0.7;">We are a real estate investment company. We are not realtors or brokers.</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('leadForm');
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const btn = form.querySelector('.form-submit');
+            const originalText = btn.textContent;
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+            try {
+                const response = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+                if (response.ok) {
+                    form.innerHTML = '<div style="text-align:center; padding: 40px 20px;"><div style="font-size: 3rem; margin-bottom: 16px;">✅</div><h3 style="font-family: DM Serif Display, serif; color: #142E23; font-size: 1.4rem; margin-bottom: 10px;">We Got Your Info!</h3><p style="color: #7a7a7a; font-size: 0.95rem; line-height: 1.6;">We\'ll review your property and call you within 24 hours with a cash offer.<br><strong>¡Gracias! Le llamaremos pronto.</strong></p></div>';
+                } else { throw new Error('Failed'); }
+            } catch (error) {
+                btn.textContent = originalText;
+                btn.disabled = false;
+                alert('Something went wrong. Please call us directly at (210) 701-0378');
+            }
+        });
+    </script>
+</body>
+</html>
